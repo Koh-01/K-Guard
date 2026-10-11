@@ -1,0 +1,48 @@
+name: nfc_guard
+description: 保安巡逻 NFC 打卡系统，支持 Telegram Bot 发送打卡记录给业主。
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  nfc_manager: ^4.2.1
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+  http: ^1.2.1
+  intl: ^0.19.0
+  camera: ^0.12.1
+  path_provider: ^2.1.6
+  record: ^7.1.1
+  flutter_local_notifications: ^22.3.1
+  timezone: ^0.11.1
+  pdf: ^3.13.1
+  image: ^4.10.1
+  image_picker: ^1.2.3
+  geolocator: ^14.1.1
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  sqflite_common_ffi: ^2.4.3
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/logo.png
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#111827"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  min_sdk_android: 21
